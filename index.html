@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gavin's Bachelor Party - Green Lake, WI</title>
+    <link rel="stylesheet" href="bachelor-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Gavin's Bachelor Party</h1>
+                <h2>Green Lake, Wisconsin</h2>
+                <p class="dates">October 17-19, 2025</p>
+                <div class="hero-subtitle">An unforgettable weekend on Tuscumbia Golf Course to celebrate our boy Gavin's marriage.</div>
+                <a href="#rsvp-form" class="hero-cta">RSVP by September 1st</a>
+            </div>
+        </header>
+
+        <section class="trip-overview">
+            <div class="overview-card">
+                <h3>Location</h3>
+                <img src="airbnb-home.avif" alt="Airbnb Home on Tuscumbia Golf Course" class="home-image">
+                <a href="https://maps.google.com/?q=691+South+St,+Green+Lake,+WI+54941" target="_blank" class="address">691 South St, Green Lake, WI 54941</a>
+                <p class="location-details">12 beds, 4.5 baths, full kitchen, pool table, and fire pit</p>
+                <p class="travel-info">3-4 hours from Chicago</p>
+                <a href="https://www.airbnb.com/rooms/1167400259454737701" target="_blank" class="card-link">View Airbnb</a>
+            </div>
+            <div class="overview-card">
+                <h3>Total Cost</h3>
+                <p><strong>Total: $2,285</strong> (Airbnb rental)</p>
+                <p>Cost per person: TBD (expect ~$200)</p>
+                <p><em>Final cost adjusts based on total RSVPs</em></p>
+            </div>
+            <div class="overview-card">
+                <h3>Schedule</h3>
+                <p><strong>Friday:</strong> 3:00 PM Check-in</p>
+                <p><strong>Sunday:</strong> 10:00 AM Check-out</p>
+            </div>
+        </section>
+
+        <section class="schedule">
+            <h3>Tentative Schedule</h3>
+            
+            <div class="day-schedule">
+                <h4>Friday, Oct 17</h4>
+                <ul>
+                    <li>3:00 PM - Check-in</li>
+                    <li>4:30 PM - Welcome Drinks at <a href="https://gooseblind.com/" target="_blank">Goose Blind</a></li>
+                    <li>8:00 PM - Dinner at Tuscumbia Golf Course Clubhouse</li>
+                    <li>10:00 PM - Chill, Gamble, Cigars, Drink Bourbon</li>
+                </ul>
+            </div>
+
+            <div class="day-schedule">
+                <h4>Saturday, Oct 18</h4>
+                <ul>
+                    <li>11:00 AM - Golf at <a href="https://golftuscumbia.com/" target="_blank">Tuscumbia</a> (~$50-70/person)</li>
+                    <li>2:30 PM - Lunch at <a href="https://www.hometowntapwi.com/" target="_blank">Hometown Tap</a> (~$10-20/person)</li>
+                    <li>6:00 PM - Dinner Options:
+                        <ul>
+                            <li><a href="https://nortonsgreenlake.com/" target="_blank">Norton's</a> (~$30-50/person)</li>
+                            <li>Local Pub</li>
+                            <li>Group cookout at the rental</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="day-schedule">
+                <h4>Sunday, Oct 19</h4>
+                <ul>
+                    <li>10:00 AM - Check-out</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="rsvp-section">
+            <h3>RSVP by September 1st</h3>
+            
+            <form id="rsvp-form" class="rsvp-form" action="https://formspree.io/f/xrblreoj" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="(XXX) XXX-XXXX">
+                </div>
+
+                <div class="form-group">
+                    <label for="venmo">Venmo Username *</label>
+                    <input type="text" id="venmo" name="venmo" required placeholder="@username">
+                    <small class="form-note">Venmo request sent Tuesday, Sep 2nd by @austinmoore37. Payment due Friday, August 5th.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="friday-dinner">Attend Friday Night Dinner at 8pm *</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="friday-dinner" value="yes" required> Yes</label>
+                        <label><input type="radio" name="friday-dinner" value="no" required> No</label>
+                    </div>
+                </div>
+
+
+                <button type="submit" class="submit-btn">Submit RSVP</button>
+            </form>
+        </section>
+
+        <section class="next-steps">
+            <h3>Next Steps</h3>
+            <p>After Sep 1st, we'll confirm the final count and share a group chat link for updates.</p>
+            <p><strong>Questions?</strong> Contact Austin at <a href="tel:847-736-8901">847-736-8901</a></p>
+        </section>
+    </div>
+
+    <div id="success-message" class="success-message" style="display: none;">
+        <h3>RSVP Successful!</h3>
+        <p>Thanks for your RSVP! We'll be in touch with payment details and updates soon.</p>
+    </div>
+
+    <script src="bachelor-script.js"></script>
+</body>
+</html>
