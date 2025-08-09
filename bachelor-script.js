@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const name = document.getElementById('name').value.trim();
         const phone = document.getElementById('phone').value.trim();
         const venmo = document.getElementById('venmo').value.trim();
-        const fridayDinner = document.querySelector('input[name="friday-dinner"]:checked');
         
         // Clear previous error styling
         clearErrors();
@@ -63,11 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
             isValid = false;
         }
         
-        // Friday dinner validation
-        if (!fridayDinner) {
-            showError('friday-dinner', 'Please select if you\'ll attend Friday dinner');
-            isValid = false;
-        }
         
         return isValid;
     }
